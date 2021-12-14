@@ -1,4 +1,7 @@
+const fs = require('fs');
 const inquirer = require('inquirer');
+const generatePage = require('./src/page-template');
+
 const promptUser = () => {
 return inquirer.prompt([
     {
@@ -131,8 +134,7 @@ const promptProject = portfolioData => {
   });
   
 // .then(projectAnswers => console.log(projectAnswers));
-// const fs = require('fs');
-// const generatePage = require('./src/page-template');
+
 
 // const pageHTML = generatePage(name, github)
 
